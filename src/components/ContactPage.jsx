@@ -48,15 +48,15 @@ const ContactPage = () => {
             <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-4 lg:gap-8 text-white'>
               <div className='flex flex-col gap-2'>
               <label>Name</label>
-              <input type="text" name="user_name" className='rounded'/>
+              <input type="text" name="user_name" className='rounded text-black'/>
               </div>
               <div className='flex flex-col gap-2'>
               <label>Email</label>
-              <input type="email" name="user_email" className='rounded'/>
+              <input type="email" name="user_email" className='rounded text-black'/>
               </div>
               <div className='flex flex-col gap-2'>
               <label>Message</label>
-              <textarea name="message" className='rounded'/>
+              <textarea name="message" className='rounded text-black'/>
               <input 
               type="submit" 
               value="Send" 
