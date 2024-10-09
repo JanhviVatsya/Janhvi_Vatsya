@@ -4,7 +4,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-// require('dotenv').config();
 
 
 const ContactPage = () => {
