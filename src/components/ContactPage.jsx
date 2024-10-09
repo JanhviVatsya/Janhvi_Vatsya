@@ -4,6 +4,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
+// require('dotenv').config();
+
 
 const ContactPage = () => {
 
@@ -13,12 +15,13 @@ const ContactPage = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_uhc5a2v', 'template_xdi9dfx', form.current, {
-        publicKey: 'wXsUHQ13pSzh6nXlS',
+      .sendForm(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY, form.current, {
+        publicKey: import.meta.env.VITE_PUBLIC_KEY,
       })
       .then(
         () => {
           console.log('Email Sent!');
+          alert("Email Sent");
         },
         (error) => {
           console.log('FAILED...', error.text);
