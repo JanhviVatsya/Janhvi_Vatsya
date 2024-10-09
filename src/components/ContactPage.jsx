@@ -4,8 +4,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-
-
 const ContactPage = () => {
 
   const form = useRef();
